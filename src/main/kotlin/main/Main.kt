@@ -50,6 +50,7 @@ fun hitungKelipatanEmpat() {
             if (i % 4 != 0) {
                 continue
             }
+            // looping for akan mencetak bilangan yang memenuhi kriteria dalam looping for
             print(String.format("$i  "))
         }
         println("")
@@ -64,9 +65,10 @@ fun hitungBilanganPrima() {
         println("Bilangan $inputBilangan bukan termasuk bilangan prima")
     } else {
         for (i in 2..inputBilangan/2) {
+            // blok if akan dijalankan ketika argument looping for memenuhi
             if (inputBilangan % i == 0) {
-                println("masuk if satu")
                 println("Bilangan $inputBilangan bukan termasuk bilangan prima")
+                // variabel berikut berfungsi sebagai penanda jika ada bilangan yang bukan prima
                 primeFlag = 1
                 break
             }
